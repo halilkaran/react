@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;  
+  button{
+      color: white;
+    border-radius:5px;
+  }
+  &--small{
+      background-color:$orange;
+      width: 3rem;
+
+  }
+  &--large{
+      background-color:$green;
+        width: 6rem;
+  }
+}
