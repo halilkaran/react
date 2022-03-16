@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Event = () => {
-  const [heading, setHeading] = useState("EVENTS");
+  let heading = "EVENTS";
+
   const handleClick = () => {
     alert("Click Btn is Pressed");
   };
@@ -10,12 +11,8 @@ const Event = () => {
   };
 
   const handleChange = () => {
-    if (heading == "EVENTS") {
-      setHeading("HOOK");
-    } else {
-      setHeading("EVENTS");
-    }
-   
+    heading = "HOOKS";
+    console.log(heading);
   };
 
   return (
